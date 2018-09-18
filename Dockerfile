@@ -41,7 +41,7 @@ RUN set -ex; \
 
 
 
-RUN apt-get install -y mysql-client vim htop imagemagick
+RUN apt-get install -y mysql-client vim htop imagemagick ssh
 
 RUN pecl install xdebug \
  && docker-php-ext-enable xdebug
