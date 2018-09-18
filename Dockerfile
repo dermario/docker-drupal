@@ -39,7 +39,9 @@ RUN set -ex; \
 	\
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;
 
-RUN apt-get install -y vim htop imagemagick ssh
+
+
+RUN apt-get install -y mysql-client vim htop imagemagick
 
 RUN pecl install xdebug \
  && docker-php-ext-enable xdebug
