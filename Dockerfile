@@ -84,3 +84,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
   && rm composer-setup.php
 
 RUN composer --version
+
+WORKDIR /code
